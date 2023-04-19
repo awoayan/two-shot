@@ -45,4 +45,5 @@ class Receipt(models.Model):
         null=True,
     )
 
-    
+    def __str__(self):
+        return f"{self.vendor}, {self.total}, {self.tax}, {self.date}"
